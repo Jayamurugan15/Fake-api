@@ -4,8 +4,7 @@ const middlewares = require('./middlewares');
 const path = require('path');
 
 const server = jsonServer.create();
-const path = require('path');
-const router = jsonServer.router(path.join(__dirname, 'db.json'));
+const router = jsonServer.router('db.json');
 const defaultMiddlewares = jsonServer.defaults();
 
 // Set default middlewares (logger, static, cors and no-cache)
