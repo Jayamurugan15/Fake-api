@@ -43,15 +43,6 @@ server.use(router);
 
 const PORT = process.env.PORT || 3001;
 
-if (process.env.NODE_ENV !== 'production') {
-  const PORT = process.env.PORT || 3001;
-  server.listen(PORT, () => {
-    console.log('🚀 Container-Presenter Pattern API Server');
-    console.log(`📡 Server is running on http://localhost:${PORT}`);
-    console.log(`🔗 Health check: http://localhost:${PORT}/api/health`);
-  });
-}
-
 server.listen(PORT, () => {
   console.log('🚀 Container-Presenter Pattern API Server');
   console.log(`📡 Server is running on http://localhost:${PORT}`);
